@@ -1,0 +1,29 @@
+body {
+    padding-top: $navbar-height + $padding-large-vertical;
+    padding-bottom: $padding-large-vertical;
+}
+
+#wrapper {
+    padding-left: $sidebar-width + $padding-large-horizontal;
+
+    #sidebar-wrapper {
+        z-index: 1000;
+        position: fixed;
+        top: $navbar-height;
+        left: $sidebar-width;
+        overflow-y: auto;
+        margin-left: -$sidebar-width;
+        height: 100%;
+        width: $sidebar-width;
+        background-color: $navbar-default-bg;
+        color: $navbar-default-color;
+        border: $navbar-default-border 1px solid;
+    }
+
+    #page-wrapper {
+        width: 100%;
+        position: relative;
+        margin-right: -$sidebar-width;
+        padding-right: $padding-large-horizontal;
+    }
+}

@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+/*
+    Variables (Bootstrap overrides included)
+*/
+@import "scss/variables";
+
+/* 
+    Bootstrap
+*/
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+/*
+    Imports
+*/
+@import "scss/layout";
+
